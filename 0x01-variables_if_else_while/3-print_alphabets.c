@@ -1,37 +1,18 @@
 #include <stdio.h>
 
-
-
 /**
- *
- *  *main -> assign a random number to the variable n each time it is executed
- *
- *   *and print the last digit of the number stored in the variable n
- *
- *    *Return: Always 0 (Success)
- *
- *     */
-
+ * main -> print the alphabet in lower case,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
-
 {
-	int ch;
+	char ch;
 
-	for (ch = 97; ch <= 122; ch++)
-
-	{
+	for (ch = 'a'; ch <= 'z'; ch++)
 		putchar(ch);
-
-	}
-
-	for (ch = 65; ch <= 90; ch++)
-
-	{
+	for (ch = 'A'; ch <= 'Z'; ch++)
 		putchar(ch);
-
-	}
-
-	putchar(10); /* this is an ascii code for new line*/
-
+	putchar('\n);
 	return (0);
 }
