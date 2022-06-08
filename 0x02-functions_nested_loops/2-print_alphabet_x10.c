@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include"main.h"
 /**
  * print_alphabet_X10 -> prints the lower case alphabets,
