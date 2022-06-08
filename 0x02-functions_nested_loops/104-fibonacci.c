@@ -3,30 +3,25 @@
 /**
  *  main - Prints the first 98 fibonacci numbers
  *
- *  Return: Nothing!
+ *  Return: int.
  */
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2;
+	long i = 0;
+	long j = 1;
+	int n = 0;
+	long fib;
 
-	while (i < 98)
+	while (n < 98)
 	{
-		if (i == 0)
-			printf("%ld", j);
-		else if (i == 1)
-			printf(", %ld", k);
+		fib = j + i;
+		if (n != 97)
+			printf("%ld, ", fib);
 		else
-		{
-			k += j;
-			j = k - j;
-			printf(", %ld", k);
-		}
-
-		++i;
+			printf("%ld\n", fib);
+		i = j;
+		j = fib;
+		n += 1;
 	}
-
-	printf("\n");
 	return (0);
 }
-
