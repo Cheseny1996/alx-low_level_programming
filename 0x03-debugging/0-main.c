@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * main - tests function that prints if intiger is positive or negative 
+ * main - tests function that prints if intiger is positive or negative
  * Return: 0
  */
 
