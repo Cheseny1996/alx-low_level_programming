@@ -1,26 +1,28 @@
 #include"main.h"
+#include <stdio.h>
 
 /**
- * _atoi - convert a string to an integer.
- * @s: the string to be comverted.
- *
- * Return: The integer value of the comverted string.
+ * _atoi - check the code for ALX School students.
+ * @s: pointer char type
+ * Return: Always 0.
  */
 
 int _atoi(char *s)
 {
-	int sign = 1;
-	int sign = 1;
+	int negative = 1, i = 0;
+	unsigned int numero = 0;
 
-	do {
-		if (*s == '-')
-			sign *= -1;
-		else if (*s >= '0' && *s <= '9')
-			num = (num * 10) + (*s - '0');
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == '-')
+			negative *= -1;
 
-		else if (num > 0)
+		else if (s[i] >= 0 + '0' && s[i] < 10 + '0')
+			numero = numero * 10 + (s[i] - '0');
+
+		else if (s[i - 1] >= 0 + '0' && s[i - 1] < 10 + '0')
 			break;
-	} while (*s++);
+	}
 
-	return (num * sign);
+	return (numero *negative);
 }
