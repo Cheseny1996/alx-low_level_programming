@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * Description ->adding a line of code to blocks of code
+ *
+ */
+
 int main(void)
 {
 	int n;
